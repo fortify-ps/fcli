@@ -57,7 +57,7 @@ public class SSCReportTemplateCreateCommand extends AbstractSSCUnirestRunnerComm
 	protected Void runWithUnirest(UnirestInstance unirest) {
 		UploadResponse uploadResponse = SSCUnirestFileTransferRunner.Upload(
 				unirest,
-				SSCUrls.UPLOAD_REPORT_DEFINITION_TEMPLATE(),
+				SSCUrls.UPLOAD_REPORT_DEFINITION_TEMPLATE,
 				filePath
 		);
 
