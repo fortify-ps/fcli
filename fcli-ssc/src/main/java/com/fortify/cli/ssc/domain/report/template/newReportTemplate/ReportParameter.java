@@ -22,8 +22,19 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE.
  ******************************************************************************/
-package com.fortify.cli.ssc.common.pojos.report.template.newReportTemplate.enums;
+package com.fortify.cli.ssc.domain.report.template.newReportTemplate;
 
-public enum ReportRenderingEngineType {
-    BIRT
+import com.fortify.cli.ssc.domain.report.template.newReportTemplate.enums.ReportParameterType;
+import io.micronaut.core.annotation.ReflectiveAccess;
+
+@ReflectiveAccess
+public class ReportParameter {
+    public ReportParameter(){}
+    public int index;
+    public String name;
+    public String description;
+    public String identifier;
+    public ReportParameterType type;
+    public ReportParameterOption[] reportParameterOptions;
+    public int paramOrder;
 }

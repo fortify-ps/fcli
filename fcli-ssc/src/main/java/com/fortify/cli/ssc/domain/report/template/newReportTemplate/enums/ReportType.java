@@ -22,13 +22,9 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE.
  ******************************************************************************/
-package com.fortify.cli.ssc.common.pojos.uploadResponse;
+package com.fortify.cli.ssc.domain.report.template.newReportTemplate.enums;
 
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlText;
-import io.micronaut.core.annotation.ReflectiveAccess;
-
-@ReflectiveAccess
-public class Code {
-    @JacksonXmlText(value = true)
-    int value;
+public enum ReportType {
+    ISSUE,
+    PROJECT
 }

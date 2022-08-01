@@ -22,21 +22,22 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE.
  ******************************************************************************/
-package com.fortify.cli.ssc.common.pojos.uploadResponse;
+package com.fortify.cli.ssc.domain.report.template.newReportTemplate;
 
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fortify.cli.ssc.domain.report.template.newReportTemplate.enums.ReportRenderingEngineType;
+import com.fortify.cli.ssc.domain.report.template.newReportTemplate.enums.ReportType;
 import io.micronaut.core.annotation.ReflectiveAccess;
 
 @ReflectiveAccess
-@JacksonXmlRootElement(localName = "UploadResponse")
-public class UploadResponse{
-    @JacksonXmlProperty(isAttribute = true)
-    public String entityId;
-
-    @JacksonXmlProperty(localName = "code")
-    public Code code;
-
-    @JacksonXmlProperty(localName = "msg")
-    public Msg msg;
+public class ReportTemplateDef {
+    public ReportTemplateDef(){}
+    @JsonProperty(required = true)
+    public String name;
+    public String description;
+    public ReportType type;
+    public ReportRenderingEngineType renderingEngine;
+    public String fileName;
+    public ReportParameter[] parameters;
+    public String templateDocId;
 }

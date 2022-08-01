@@ -22,7 +22,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE.
  ******************************************************************************/
-package com.fortify.cli.ssc.common.pojos.report.template.existingReportTemplate;
+package com.fortify.cli.ssc.domain.report.template.existingReportTemplate;
 
 import io.micronaut.core.annotation.ReflectiveAccess;
 

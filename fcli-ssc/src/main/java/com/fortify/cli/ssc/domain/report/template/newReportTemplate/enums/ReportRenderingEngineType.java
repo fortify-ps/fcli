@@ -22,13 +22,8 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE.
  ******************************************************************************/
-package com.fortify.cli.ssc.common.pojos.report.template.newReportTemplate.enums;
+package com.fortify.cli.ssc.domain.report.template.newReportTemplate.enums;
 
-public enum ReportParameterType {
-    BOOLEAN,
-    MULTI_PROJECT,
-    PROJECT_ATTRIBUTE,
-    SINGLE_PROJECT,
-    SINGLE_SELECT_DEFAULT,
-    STRING
+public enum ReportRenderingEngineType {
+    BIRT
 }

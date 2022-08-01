@@ -26,8 +26,8 @@ package com.fortify.cli.ssc.picocli.command.appversion_artifact;
 
 import com.fortify.cli.common.picocli.mixin.output.IOutputConfigSupplier;
 import com.fortify.cli.common.picocli.mixin.output.OutputConfig;
-import com.fortify.cli.ssc.common.pojos.application.version.ApplicationVersion;
-import com.fortify.cli.ssc.common.SSCUrls;
+import com.fortify.cli.ssc.domain.version.ApplicationVersion;
+import com.fortify.cli.ssc.rest.SSCUrls;
 import com.fortify.cli.ssc.picocli.command.AbstractSSCUnirestRunnerCommand;
 import com.fortify.cli.ssc.picocli.mixin.application.version.SSCApplicationVersionIdMixin;
 import com.fortify.cli.ssc.rest.unirest.runner.SSCUnirestFileTransferRunner;

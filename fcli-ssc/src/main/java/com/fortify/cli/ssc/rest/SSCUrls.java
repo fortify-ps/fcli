@@ -22,7 +22,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE.
  ******************************************************************************/
-package com.fortify.cli.ssc.common;
+package com.fortify.cli.ssc.rest;
 
 public class SSCUrls {
     private static final String ApiBase = "/api/v1";
